@@ -16,6 +16,7 @@ class when_user_clicks_on_login_button: XCTestCase {
     override func setUp() {
          app = XCUIApplication()
         continueAfterFailure = false
+        app.launchEnvironment = ["ENV": "TEST"]
         app.launch()
     }
     
